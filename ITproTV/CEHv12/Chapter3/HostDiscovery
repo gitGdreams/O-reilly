@@ -1,0 +1,18 @@
+External and Internal hosts
+
+techniques:
+arp
+icmp
+udp - no response = open; reponse = blocking
+syn
+
+
+tools:
+ping 
+build a script to ping sweep
+nmap -sn [targetIP/Sub]
+  -sn = ping sweep
+traceroute - good to pick up routers and firewalls
+
+Windows block echo requests - blocks icmp
+
