@@ -1,0 +1,8 @@
+Full open scan - utilized full tcp open connection, full handshake
+
+nmap -sT [targetIP] -> tcp scan -> give you port, state, service
+wireshark 
+
+if port is close, it won't finish the handshake
+
+might crash the service, easy to detect cuz it's loud
