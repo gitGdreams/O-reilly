@@ -1,0 +1,15 @@
+Doesn't do 3 way handshake
+
+SYN scan, initializes -> receives syn ack -> consider it open -> sends rst packet
+half open handshake
+
+nmap's default scan
+
+there's also manual
+kali -> "sudo nmap -sS  [target]" -> password -> same result as before but faster
+
+or use hping3
+  "hping3 --scan [portRange] -S [targetIP]" or hping3 -8 [portRange] -S [targetIP]
+    --scan = -8
+    -S = syn 
+
