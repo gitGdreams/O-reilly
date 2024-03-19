@@ -1,0 +1,15 @@
+  NMAP
+the king
+
+Open Kali -> terminal -> "nmap" -> review the documentation
+nmap.org for more info
+
+unicornscan - simple and fast scanner
+
+masscan - really fast for scanning the internet
+
+hping3 - packet crafting utility
+
+metasploit - so much things to do in this framework
+
+fing - net scanning for mobile
