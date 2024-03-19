@@ -1,0 +1,8 @@
+Ports: 1-65535
+
+80 - http
+443 - https
+
+nmap -T5 -n -Pn -p- [target] -o nmapscan.txt -> port, state, service
+nmap -T5 -n -Pn -p [ports to scan] -sV [targetIP] -o nmapVersionScan.txt -> give you the version of the listed ports from previous scan
+
