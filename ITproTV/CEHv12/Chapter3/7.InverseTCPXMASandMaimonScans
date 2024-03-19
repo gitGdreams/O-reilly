@@ -1,0 +1,62 @@
+Inverse TCP scan - manipulating tcp the way it works to determine if the port is closed
+  using other flags like:
+    fin
+    urg
+    push
+    rst
+    null = no flag set
+
+open ports don't repond to fin, urge, push, or null
+close ports repond with a rst instead
+
+  tools:
+nmap
+hping3
+
+sudo nmap -sF [targetIP] -> open|filtered could be firewall dropping packets, not closed but there's a possibility that it's closed
+  -sF = scan Fin
+
+sudo hping3 -8 8888-8890 -F [targetIP] -> Not responding ports: 8888 -> now, the change of this port is open is higher
+  -8 = --scan = scan
+  -F = fin
+
+sudo nmap -sF [targetIP]
+  -sF = null scan
+
+sudo hping3 -c 2 -V -p 8888 -s 4444 -Y [targetIP] -> 100% packet loss; possibly open -> change port "-p 8889" -> 0% packet loss; close 
+  -y = ymas = no flag set
+
+sudo nmap -scanflags FINURG [targetIP]
+  multiple flags scan
+
+sudo hping3 -8 1-65335 -F -S -U -P -R
+  -F = fin
+  -S = syn
+  -P = push
+  -U = urg
+  -R = rst
+  -A = ack
+  -X = xmas = opposite of null, ymas scan
+  -Y = ymas
+
+XMAS scan opposite of ymas or null scan
+  lighting up like a xmas tree with fin push urge flags
+
+"sudo nmap -SX [targetIP]" = "sudo nmap -scanflags FINPUSHURG"
+
+Maimon scan 
+  fin ack scan
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
