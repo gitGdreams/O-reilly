@@ -1,0 +1,16 @@
+is there a firewall, what is it filtering, is it stateless or stateful
+
+sudo nmap -sA [targetIP]
+  if you receive reset or rst its might be open
+  in stateless firewall you see no-response; then show the unfiltered ports or services
+  in stateful firewall you see no-response 
+
+Stateful firewalls look if there is an established connection, that's why when you send an ack, it blocks it.
+
+TTL BASED scan
+In stateless firewall, 
+"sudo nmap -sA [targetIP] --packet-trace" -> to see TTLs values -> look for RCVD & reset flag and take note the ttl value 
+"sudo nmap -sA --ttl [ttlValueFromPreviousScan] [targetIP] --packet-trace -> lower ttl value = open
+
+WINDOWS BASED or TCP window scan
+"sudo nmap -sA [targetIP] --packet-trace" -> notice the win=[value] -> 
