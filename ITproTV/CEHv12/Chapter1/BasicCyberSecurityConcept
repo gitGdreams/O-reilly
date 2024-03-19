@@ -1,0 +1,11 @@
+  CIA triad:
+Confidentiality: Only the people who supposed to see it, should see it.
+Integrity: no change, if there is change it must be authorized.
+Availability: Available to those who should be available it to. 
+  Expansion:
+Authenticity: Authentic, legit.
+Non-repudiation: can't deny who did it.
+
+
+Red team: Attacker, pentester, vulnerability assessor, Ethical Hacker
+Blue team: Defenders
