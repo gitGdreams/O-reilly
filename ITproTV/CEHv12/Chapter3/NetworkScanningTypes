@@ -12,3 +12,13 @@ What's hosts are alive? what are they running? what are the vulnerabilities?
 Port scan - what ports are running
 Service scan - verity what service is running in that port and the version of the service that is running
 
+Vulnerability scanning - discover vulnerabilities, it will do all the scanning, compare it to the database of known vulns, make a report.
+
+nmap, just type it in kali, you will see its documentation, good info.
+
+man nmap = manual nmap
+
+
+
+
+
