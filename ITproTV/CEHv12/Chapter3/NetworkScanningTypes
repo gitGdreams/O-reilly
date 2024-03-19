@@ -1,0 +1,14 @@
+Network scanning - actively utilizing network technologies to gathern info about technologies that are running in the network. Discover live hosts on the network.
+
+Host discovery is network scanning, Discover live hosts on the network.
+
+Port scan 
+Service scan to verify port scan
+
+Vulnerability scanning - not a network scan, can be an agent installed in the host 
+
+What's hosts are alive? what are they running? what are the vulnerabilities?
+
+Port scan - what ports are running
+Service scan - verity what service is running in that port and the version of the service that is running
+
