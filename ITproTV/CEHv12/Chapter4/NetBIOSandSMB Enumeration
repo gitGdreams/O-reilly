@@ -1,0 +1,21 @@
+NetBIOS windows file sharing, printer sharing, one point alternative to DNS available in all windows machine
+
+Windows machine -> cmd -> nbtstat -> result shows options and how to use it -> you'll see name and MAC
+Linux machine -> terminal -> nbtscan -> same
+
+sudo nmap -sV --script nbstat.nse [targetIP] -> similar output as nbtstat and nbtscan
+
+SMB - server massage block uses port 445
+  used for file sharing, microsoft has their own version of it
+    hacked(reversedEngineered) version, linux, called SAMBA - so linux and windows can talk
+  sudo nmap -A -T5 -n -Pn -p 445 [targetIP] -> result shows smb and its version and more
+     -A = All
+    -T5 = fastest, most aggressive scan
+  for windows, netview
+  another linux tool, smbclient -L //targetIP
+  enum4linux -S [targetIP] -> look for tmp directory -> "smbclient //[targetIP]/tmp -> and start navigating ->
+    check what you can do in tmp directory like, read, write, execute
+      tmp directory stores temporary file, gets deleted when restarted
+
+
+
