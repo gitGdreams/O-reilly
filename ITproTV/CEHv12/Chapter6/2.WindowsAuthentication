@@ -3,7 +3,7 @@ Security Accounts Manager (SAM) database or active directory database
   locks the file while OS is running. Whet? It's in the memory.
     it's hashed
 
-NTLM Authentication or NT LAN Manager - backup for kerberos
+NTLM Authentication or NT LAN Manager - backup for kerberos -https://www.youtube.com/watch?v=xAJal6YJhCE
 Something to watch
 https://www.youtube.com/watch?v=L26Xq7m0uQ0
 
