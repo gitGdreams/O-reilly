@@ -1,0 +1,27 @@
+                            VulnAssessment Methods
+Product-base method - Scanning software or hardware installed in organization's internal network. Organization has complete control. No outside assessment.
+
+Service-based method - maybe the product of the future, offered by third parties. Some solutions are hosted inside the network, others outside the network. 
+
+Tree-based Assessment - multiple different types of scans, based on the role of each machines
+
+Inference-based assessment - scan first, see what they got, build inventory of protocols found on the machine. Next scan will depend on the first scan.
+
+                            VulnAssessment Tools:
+host-based - installed on base, vulnerabilities on that specific machine
+
+Depth assessment - looking for new vulnerabilities, fuzzers
+
+Application-layer tools - Nikto, to scan web application itself. other tools, skipfish
+  nikto -h https://[url]
+
+Mobile assessment tool
+
+Scope Assessment tool - test vulns in applications and operating system
+
+Location and Data Examination tools
+  Network-based scanner: where are you. only scan the host that it's installed on
+  Agent-based: scans the hosts and other remote hosts
+  Proxy scanner: one at a time, network-based scanner that can scan networks from any machine
+  Cluster: like proxy but multiple at the same time
+
