@@ -1,0 +1,30 @@
+              Windows Authentications
+Security Accounts Manager (SAM) database or active directory database
+  locks the file while OS is running. Whet? It's in the memory.
+    it's hashed
+
+NTLM Authentication or NT LAN Manager - backup for kerberos
+Something to watch
+https://www.youtube.com/watch?v=L26Xq7m0uQ0
+
+Kerberos Authentication - https://www.youtube.com/watch?v=1yWW7VQUX0A
+  user/client
+  resource/file server
+  key distribution center/authentication server/ticket granting server
+
+
+
+
+
+
+
+
+
+=========================================
+
+
+
+
+
+
+
