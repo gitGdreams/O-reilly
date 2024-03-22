@@ -1,0 +1,30 @@
+Active Assessment - scanning hosts, services, vulnerabilities
+
+Passive Assessment - sniffing network traffic. is there any sensitive info passing by?
+  Identify what are the active stuff
+
+Internal - Insider Threat, Checking from inside. More on checking checking network vuln from inside
+
+External - hacker's view, from outside world, from application layer
+
+Host-based Assessment - configuration-level checks, user directories and more. Checks security of particular network or server
+
+Network-based - is there a network configuration vulnerabilities, routing, switching, authentication
+
+Application assessment - web applications, application client-server communication
+
+Database Assessment - SQLs, ORACLE
+
+Wireless network assessment - mainly the encryption, WEP. Rogue networks that's in the organization's perimeter
+
+Distributed - simultaneously assessing the distributed organization assets, such as client and server applications, using appropriate synchronization techniques. It's about Synchronization
+
+Credential assessment - have some access, can be insider or outsider creds
+Non-credential assessment - no access
+
+Manual Assessment
+
+Automated Assessment
+
+
+
