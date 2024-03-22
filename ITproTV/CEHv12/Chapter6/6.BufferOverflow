@@ -1,0 +1,5 @@
+If program doesn't know how to handle a data input by user, it might spill other data from other memory areas.
+  If the attacker can control this situation, the program will just spill whatever the attacker wants it to spill.
+
+                Types of Buffer Overflow:
+Stack-Based 
