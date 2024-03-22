@@ -1,0 +1,9 @@
+        CEH Hacking Methodology (CHM)
+Gain Access -> Priv Escalate -> Maintain Access -> Clear logs
+
+      Goals in system hacking
+Gain access - password cracking, social engineering to get password, 
+Privilege Escalation - horizontal, vertical; 
+Maintaining Access - Execute applications: backdoors, keyloggers, spyware, crackers, malware
+Hiding files - mainly bad actors do to it to hide PII info maybe, something that can be used for later
+Covering Logs - 
