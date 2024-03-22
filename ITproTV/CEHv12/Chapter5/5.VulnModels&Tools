@@ -25,3 +25,33 @@ Location and Data Examination tools
   Proxy scanner: one at a time, network-based scanner that can scan networks from any machine
   Cluster: like proxy but multiple at the same time
 
+                  Tools:
+Qualsys VM(Vulnerability Management) - cloud-based, continuously identify threat and monitor unexpected changes
+Nessus Pro - vuln scan tool
+GFI LanGuard -scans for, detects, assesses, and rectifies security vulnerabilities in a network and its connected devices.
+OpenVAS - framework of seceral services and tools that offer a comprehensive powerful vulnerability scanning and vuln management solution. Greenbone!!
+Nikto - Open source web server scanner.
+
+            some of the additional vulnerability assessment tools:
+Qualys FreeScan (https://www.qualys.com) 
+Acunetix Web Vulnerability Scanner (https://www.acunetix.com) 
+Nexpose (https://www.rapid7.com) 
+Network Security Scanner (https://www.beyondtrust.com) 
+SAINT (https://www.carson-saint.com) 
+beSECURE (AVDS) (https://www.beyondsecurity.com) 
+Core Impact Pro (https://www.coresecurity.com) 
+N-Stalker Web Application Security Scanner (https://www.nstalker.com) 
+ManageEngine Vulnerability Manager Plus (https://www.manageengine.com) 
+Nipper Studio (https://www.titania.com)
+
+        Vulnerability Assessment Tools for Mobile 
+Vulners Scanner
+SecurityMetrics Mobile
+
+
+
+
+
+
+
+
