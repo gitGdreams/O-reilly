@@ -3,3 +3,14 @@ If program doesn't know how to handle a data input by user, it might spill other
 
                 Types of Buffer Overflow:
 Stack-Based 
+  EBP: Extended Base Pointer - where is the beginning of the stack
+  ESP: Extended Stack Pointer - This is where the next thing goes in the stack
+  EIP: Extended Instruction Pointer - point me to the next set of commands that I should do
+  ESI: Extended Sourse Index - source index
+  EDI: Extended Destination Index - destination index
+  
+Heap-based
+
+
+      Tools:
+Debuggers
