@@ -1,0 +1,10 @@
+TheCombinator - combination of words from two wordlist/dictionaries
+
+PRINCE - probability infinite chained elements - advanced version of a combinator attack
+   single input dictionary to build chains of combined words
+
+Markov chain
+  Analyzes the list of found password, what is the most common letter, number or password
+    After seeing what is the most common, it logically formulates related/similar type of password
+
+    There a lot more
