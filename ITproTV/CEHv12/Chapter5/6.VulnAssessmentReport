@@ -1,1 +1,7 @@
+                Vuln Assessment Report
+Executive Summary - Scope and objectives, testing narrative,  Findings Summary, Remediation Summary
+Assessment Overview - Methodology, Scan info: type of scan, tools, versions, assets scanned; Target info: target's system name and address
+Findings - scanned hosts with details, whatever you find
+Risk Assessment - class of vulns, risk levels, potential vulns that can compromise system or application
+Recommendation - 
 
