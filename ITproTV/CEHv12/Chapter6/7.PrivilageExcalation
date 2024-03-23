@@ -9,11 +9,53 @@ Vertical
 
 DLL Hijacking
   Taking advantage of not using fully qualified path.
-    have a malicious DLL ready -> look for real DLL -> Change malicious dll's name into real dll -> now windows software will look for the dll name and if it finds the fake real dll -> you accomplished you goal.
+    have a malicious DLL ready -> look for real.dll -> Change malicious dll's name into name of real.dll -> place it in the application directory ->
+      if path is not specified, when the user run the application will execute dll in the same directory as the application which is the fake real.dll  -> 
+        once executed, attacker now have gained remote access to the system.
+      Use Robber and PowerSploit to detect hijackable DLLs and perform DLL hijacking on the target system
+
+Dylib hijacking - same as DLL hj but MacOS version
+
+Unattended installation - might contain administrative password
+  unattended.xml files: 
+    C:\Windows\Panther\ 
+    C:\Windows\Panther\ UnattendGC\ 
+    C:\Windows\System32\ 
+    C:\Windows\System32\sysprep\
+
+Unquoted service paths - spaces in between the Names of the folder
+  New Folder instead of "New Folder" 
+    Attackers exploit services with unquoted paths running under SYSTEM privileges to elevate their privileges
 
 
-Tools:
-Robber
-  to find executables prone to DLL hijacking.
-ProcMon
-  Process Monster
+
+
+
+===============================================
+Meltdown vulnerability: This is found in all the Intel processors and ARM processors deployed by Apple. 
+  This vulnerability leads to tricking a process to ACCESS OUT-BOUND memory by exploiting CPU optimization mechanisms such as speculative execution.
+
+Dylib hijacking: This allows an attacker to inject a malicious dylib in one of the primary directories and simply load the malicious dylib at runtime.
+
+Spectre vulnerability: Spectre vulnerability is found in many modern processors such as AMD, ARM, Intel, Samsung, and Qualcomm processors. 
+  This vulnerability leads to tricking a processor to exploit SPECULATIVE execution to read restricted data. The modern processors implement speculative execution to predict the future and to complete the execution faster.
+
+DLL hijacking: In DLL hijacking attackers place a malicious DLL in the application directory; the application will execute the malicious DLL in place of the real DLL.
+
+
+
+C:\Windows\system32>nltest /domain_trusts: 
+  Attackers use this utility to collect information about trust domains and use the gathered information to add a domain trust or 
+    modify the settings of existing domain trusts to escalate privileges through Kerberoasting and pass-the-ticket attacks.
+C:\Windows\Panther\ UnattendGC\: 
+  Unattended installs allow attackers to deploy Windows OSs without the intervention of an administrator. 
+    In Windows systems, the Unattend.xml file is stored in the above location.
+\<DOMAIN>\SYSVOL\<DOMAIN>\Policies\: 
+  Attackers use this path to access the domain group policies and modify them to perform unintended activities such as creating a new account, disabling or 
+    modifying internal tools, ingress tool transfer, unwanted service executions, and modifying the policy to extract passwords in plaintext.
+C:\Windows\System32\osk.exe: 
+  Attackers create persistence and escalate privileges by embedding and running malicious code within Windows accessibility features. 
+    On-screen keyboard is an accessibility feature abused by attackers.
+
+
+  
