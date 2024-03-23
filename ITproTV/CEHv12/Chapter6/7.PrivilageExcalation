@@ -1,5 +1,19 @@
-              Type:
+Either higher level or another level of privilege
+  OS
+  Software vulnerabilities
+  when they release update every Tuesday due to vulnerabilities that are discovered and you can look them up in exploit-db, MITRE CVE, vulDB
+
+Type:
 Horizontal
 Vertical
 
 DLL Hijacking
+  Taking advantage of not using fully qualified path.
+    have a malicious DLL ready -> look for real DLL -> Change malicious dll's name into real dll -> now windows software will look for the dll name and if it finds the fake real dll -> you accomplished you goal.
+
+
+Tools:
+Robber
+  to find executables prone to DLL hijacking.
+ProcMon
+  Process Monster
