@@ -58,4 +58,9 @@ C:\Windows\System32\osk.exe:
     On-screen keyboard is an accessibility feature abused by attackers.
 
 
-  
+  Defend against the Abuse of sudo Rights
+Implement a strong password policy for sudo users.
+Turn off password caching by setting timestamp_timeout to 0 so that users must input their password every time sudo is executed.
+Separate sudo-level administrative accounts from the administrator’s regular accounts to prevent theft of sensitive passwords.
+Update user permissions and accounts at regular intervals.
+Test sudo users with access to programs containing parameters for arbitrary code execution.
