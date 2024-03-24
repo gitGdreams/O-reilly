@@ -7,4 +7,22 @@ Tools:
 Fatrat
 Pupi 
 
-Go to lab 
+
+===============================================
+chi-square - probability test whether the given stego object and original data, same or not
+Chosen-messsage - generates stego objects
+known-cover - compares stego-object and cover medium to identify the hiidden message
+distinguishing statistical - analyzes the embedded algorithm 
+
+Stego-only: no access to any info except the stego medium or stego-object
+Chosen-message: uses known message to generate a stego object
+Chosen-stego: when the steganalyst knows both the stego-object and steganography tool or algorithm used to hide the message
+
+Application level rootkit: operates inside the victim's computer, replacing the standard application files with rootkits or by modifying behavior of present applications with patches, injected malicious code and more
+Boot Loader level rootkit: replacing or modifying the legitimate bootloader with another one
+Library level: higher up in the OS, usually patch, hook or supplant system calls with backdoor versions
+Hardware/Firmware: create persistent malware image in hardware
+
+Snow is a program for concealing messages in text files by appending tabs and spaces to the ends of lines
+
+Silver-ticket: steal legitimate users’ credentials and create a fake Kerberos TGS to acquire permissions to only a single service in an application
