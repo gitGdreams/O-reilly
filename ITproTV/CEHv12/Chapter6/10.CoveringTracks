@@ -1,1 +1,23 @@
 Make sure they won't see you
+
+tripwire - you access certain folder, it triggers and alarm
+
+
+
+=====================================================================
+
+    Techniques used for Clearing Tracks
+Disable auditing: An attacker disables auditing features of the target system
+Clearing logs: An attacker clears/deletes the system log entries corresponding to his/her activities
+Manipulating logs: An attacker manipulates logs in such a way that he/she will not be caught in legal actions
+
+history -w
+  Clear current shell and retain command history of other shell
+
+SECEVENT.EVT
+   manipulate the log files
+
+adslist.exe: dslist.exe is third-party utilities to show and manipulate hidden streams.
+Cipher.exe: Cipher.exe is an in-built Windows command-line tool that can be used to securely delete data by overwriting them to avoid recovery in the future. This command also assists in encrypting and decrypting data in NTFS partitions
+Auditpol.exe: Auditpol.exe is the command-line utility tool to change audit security settings at the category and sub-category levels.
+ATTRIB.exe: ATTRIB.exe displays or changes the file attributes of a victim’s files so that the attacker can access them.
