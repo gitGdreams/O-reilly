@@ -5,7 +5,31 @@ Persistence
 
 Tools:
 TheFatrat
-Pupy
+Pupy - more of a docker thing
+
+Alternate data stream - can be used to hide scripts
+  "notepad file1.txt:evil.ps1"   the ":" adds the hidden file
+  "type .\file.txt:evil.ps1"    to view the hidden file
+
+Rootkits
+  Malware that replaces OS files or processes with malicious files for backdoor access
+Types:
+  Bootloader level 
+  Hardware/firmware level - stored in firmware itself
+  Kernel level
+  Hypervisor level - virtualizations
+  Application level - runs like regular application
+  Library level - high level system calls
+
+AdminSD holder - makes account with admin capabilities
+  adminSD holder protects priv user accounts from modifications 
+  take low level user account and set it to be protected by AdminSD holder via ACL -> 
+    Security descriptive propegator(SDprop) will then check any changes in adminSD holder account and modify the account to match the permission of the group ->
+      low level account will then be modified to be one of the admins in the group.
+
+WMI event subscription
+  automation - if this event happens, do this -> whatever you want
+
 
 
 ===============================================
