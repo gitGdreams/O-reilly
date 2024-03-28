@@ -1,0 +1,34 @@
+OWASP Top 10 Cloud Security Risks 
+R1-Accountability and Data Ownership: Possibility of jeopardized data recovery that may result in critical risks due to public cloud usage.
+R2-User Identity Federation: No control over multiple user IDs and creds.
+R3-Regulatory Compliance: Complex Compliance. Different countries, different laws.
+R4-Business Continuity: 
+
+
+
+Domain Hijacking: Stealing a domain name from its legitimate owner.
+Cybersquatting: Registering a domain name similar to a legitimate one with the intention of phishing or scamming users.
+DNS Poisoning: Redirecting users to a fake website by manipulating the DNS server or cache.
+Domain Snipping: Registering a domain name immediately after it expires.
+Privilege Escalation: Unauthorized users gaining higher access rights due to system vulnerabilities.
+Illegal Access to the Cloud: Unauthorized entry into cloud services due to weak authentication and authorization controls.
+Isolation Failure: Unauthorized access to cloud data due to security isolation breakdowns.
+Modifying Network Traffic: Altering network communication due to provisioning flaws or encryption vulnerabilities.
+Service Hijacking Using Social Engineering Attacks: Gaining access to cloud services by stealing credentials through social engineering methods.
+Wrapping Attack: Duplicating SOAP message bodies in the TLS layer to impersonate legitimate users.
+DNS Attack: Attacking DNS to acquire authentication credentials from internet users.
+Side Channel Attack: Compromising cloud security by placing a malicious virtual machine near a target server and launching an attack.
+Cloudborne Attack: Exploiting vulnerabilities in bare-metal cloud servers to implant malicious backdoors.
+Instance Metadata Service (IMDS) Attack: Exploiting vulnerabilities to access metadata of cloud instances and gain unauthorized access.
+Cache Poisoned Denial of Service (CPDoS)/Content Delivery Network (CDN) Cache Poisoning Attack: Causing denial of service by poisoning CDN caches with malicious or error-based content.
+Cloud Snooper Attack: Compromising AWS security groups to extract sensitive data stealthily.
+Fragmentation Attack: Overloading a web server with large fragmented packets to consume excessive resources.
+Slowloris Attack: Denying service by sending partial HTTP requests to fill up the target server's connection pool.
+Golden SAML Attack: Exploiting SAML tokens to forge identity assertions and gain unauthorized access to cloud networks.
+Cloud Snooper Attack: Compromising AWS security groups to extract sensitive data stealthily.
+
+Man-in-the-Cloud (MITC) Attack: MITC attacks are carried out by abusing cloud file synchronization services, such as Google Drive or DropBox, for data compromise, command and control (C&C), data exfiltration, and remote access. Synchronization tokens are used for application authentication in the cloud but cannot distinguish malicious traffic from normal traffic. Attackers abuse this weakness in cloud accounts to perform MITC attacks.
+Cloud Hopper Attack: Cloud hopper attacks are triggered at managed service providers (MSPs) and their customers. Once the attack is successfully implemented, attackers can gain remote access to the intellectual property and critical information of the target MSP and its global users/customers. Attackers also move laterally in the network from one system to another in the cloud environment to gain further access to sensitive data pertaining to the industrial entities, such as manufacturing, government bodies, healthcare, and finance.
+Cloud Cryptojacking: Cryptojacking is the unauthorized use of the victim’s computer to stealthily mine digital currency. Cryptojacking attacks are highly lucrative, involving both external attackers and internal rogue insiders. To perform this attack, attackers leverage attack vectors like cloud misconfigurations, compromised websites, and client or server-side vulnerabilities
+Cloudborne Attack: Cloudborne is a vulnerability residing in a bare-metal cloud server that enables attackers to implant malicious backdoor in its firmware. The installed backdoor can persist even if the server is reallocated to new clients or businesses that use it as an IaaS. Physical servers are not confined to one client and can be moved from one client to another.
+
