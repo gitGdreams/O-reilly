@@ -1,0 +1,39 @@
+==============
+Cloud Hacking
+==============
+
+        Cloud Vulnerability Scanner
+        
+Trivy: automated tool to perform CONTAINER vulnerability scanning
+  Source: github.com
+Claire
+Dagda
+Twistlock
+
+Sysdig: identifies KUBERNETES vulnerabilities 
+  Source: sysdig.com
+
+S3 Enumeration
+  looking for open cloud storage to maybe find secret keys and other important critical informations by:
+    Inspecting html
+      Brute-forcing URL: http://s3.amazonaws.com/[bucket_name]
+      Finding Subdomains: OWASP Amass and Robtex
+      Reverse IP search
+      Google dork: 
+      o inurl: s3.amazonaws.com 
+      o inurl: s3.amazonaws.com/audio/ 
+      o inurl: s3.amazonaws.com/video/ 
+      o inurl: s3.amazonaws.com/backup/ 
+      o inurl: s3.amazonaws.com/movie/ 
+      o inurl: s3.amazonaws.com/image/
+  
+ Identify Open S3
+   Tool: S3Scanner
+     Source: github.com
+       Run the following S3Scanner command to scan AWS buckets listed in a file with 8 threads: 
+         s3scanner --threads 8 scan --buckets-file ./bucket-names.txt 
+       Run the following command to dump a single AWS bucket: 
+         s3scanner dump --bucket my-bucket-to-dump
+
+
+
