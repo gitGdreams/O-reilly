@@ -1,0 +1,60 @@
+==========
+Container
+=========
+portable software package including all you need, to run an application.
+  Container as a Service.
+
+Five-Tier Architecture:
+  T1-Developer Machine: image creation.
+  T2-Testing and Accreditation systems: verification and validation if they are exactly what they should be then send to registry.
+  T3-Registries: stores the images.
+  T4-Orchestrators: transforms image to container and deploy them to hosts.
+  T5-Hosts - operates and manages container as instructed by orchestrator.
+
+=======
+Docker
+======
+open-source containerization platform.
+  way to go to work with containers.
+
+Images: basic foundation for building containers.
+Docker Daemon: background services, listens to API calls.
+Docker Client: primary way to interact with docker, CLI.
+Docker Registry: docker hub, repo of official images.
+Docker Files: simple text files, contains list of commands for Docker Client(command line interface)
+
+==============
+Orchestration
+=============
+  automated process of managing lifecycles of containiers, Used for deploying in scale. Makes life easier.
+
+Tools:
+Kubernetes
+Docker Swarp
+Ansible
+Openship
+
+Security concerns:
+Should I trust public containers made by third party
+Have a large attack surface
+Container Breakout: If attacker can escape container, attacker can now attack the host. Some runs as root and if breakout happens, it's bad
+Noisy neighbor: resource exhaustion
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
